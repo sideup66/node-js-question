@@ -28,7 +28,7 @@ export function parseBooksData(books, reviews) {
 var BooksWithReviews;
 for(let i of books)
 {
-  if (i.id = reviews[i].id)
+  if (i.id = reviews[i].bookid)
   {
     BooksWithReviews += books[i].concat(reviews[i]);
   }
