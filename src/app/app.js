@@ -24,7 +24,16 @@ class BookWithReviews {
  */
 export function parseBooksData(books, reviews) {
 
-var BooksWithReviews = books.concat(reviews);
+//var BooksWithReviews = books.concat(reviews);
+var BooksWithReviews;
+for(let i of books)
+{
+  if (i.id = reviews[i].id)
+  {
+    BooksWithReviews += books[i].concat(reviews[i]);
+  }
+}
+
 
   return [BooksWithReviews];  // TODO: Implement
   
