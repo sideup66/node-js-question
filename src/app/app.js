@@ -24,22 +24,20 @@ class BookWithReviews {
  */
 export function parseBooksData(books, reviews) {
 
-    //var BooksWithReviews = books.concat(reviews);
-    //var BooksWithReviews
-    //for(let i of books)
-    //{
-          
-      
-    //}
-   // var intersections = books.filter(e => reviews.indexOf(e) !== -1);
-
-    books.forEach(function (book) { book.reviews = reviews.filter(function (review) { return book.Id == review.BookId; }) }
-   // var intersection = books.filter(element => reviews.includes(element));
+//var BooksWithReviews = books.concat(reviews);
+var BooksWithReviews;
+for(let i of books)
+{
+  if (i.id = reviews[i].bookid)
+  {
+    BooksWithReviews += books[i].concat(reviews[i]);
+  }
+}
 
 
-  //return [];  // TODO: Implement
+  return [BooksWithReviews];  // TODO: Implement
   
-
+}
 
 /**
  * Displays data from passed `books` array. For example, if books argument would have following value:
